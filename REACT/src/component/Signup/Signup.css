@@ -1,0 +1,109 @@
+/* Overall container for the signup page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+    font-family: Arial, sans-serif;
+    flex-direction: column; 
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fbd9e3; 
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; 
+}
+
+.Signin-container {
+    width: 300px;
+    padding: 30px;
+    background-color: rgb(221, 215, 218);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.Signin-container h2 {
+    color: #c01b1b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin-top: -5px;
+    
+}
+
+.Signin-container label {
+    display: block;
+    font-size: 14px;
+    color: #951818;
+    text-align: left;
+}
+
+.Signin-container input[type="text"],
+.Signin-container input[type="email"],
+.Signin-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ef1717;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.Signin-container input[type="text"]:focus,
+.Signin-container input[type="email"]:focus,
+.Signin-container input[type="password"]:focus {
+    border-color: #cf3a2a;
+    outline: none;
+    box-shadow: 0 0 5px rgba(158, 175, 76, 0.3);
+}
+
+.Signin-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b96199; /* Green button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Signin-container button:hover {
+    background-color: #9fa614; /* Darker green on hover */
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link button {
+    width: 100%;
+    padding: 10px;
+    background-color: #13e273; /* Green button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-link button:hover {
+    background-color: rgb(19, 101, 101); /* Darker green on hover */
+}
+
+.login-link a {
+    text-decoration: none;
+    color: #0e140e; /* Link color */
+    font-weight: bold;
+}
