@@ -1,0 +1,125 @@
+/* Registration.css */
+
+.reg-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125vh; 
+  width: 98vw; 
+  background-image: url('../assets/regimg2.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  margin: 0; 
+  font-family: Arial, sans-serif;
+}
+
+.reg-container {
+  margin-top: 100px;
+    width: 490px;
+    padding: 20px;
+    background-color: rgb(204, 232, 178);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .reghead {
+    background-color: #daa46b;
+    padding: 5px;
+
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .title1 {
+    color: #0f1213;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .reg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  
+  .reg label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .reg input[type="text"],
+  .reg input[type="email"],
+  .reg input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ef1717;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .reg input[type="text"]:focus,
+  .reg input[type="email"]:focus,
+  .reg input[type="password"]:focus {
+    border-color: #cf3a2a;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  }
+  
+  .button-container1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+ 
+  .save-button1 {
+    background-color: #847e10;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+    margin-top: 20px;
+    height: 47px;
+  }
+  .back1 button  {
+    background-color: #10847e;
+    color: white;
+    padding: 12px 60px 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    margin-top: 20px;
+  }
+  
+  
+  .back1 button:hover
+   {
+    background-color: #377b0f;
+  }
+  .save-button1:hover
+   {
+    background-color: #0f2e7b;
+  }
+  
+  .fourthdiv1 {
+    background-color: #e5d6f8;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .rights1 {
+    font-size: 14px;
+    color: #b20e0e;
+    cursor: pointer;
+  }
+  

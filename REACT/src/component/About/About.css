@@ -1,0 +1,326 @@
+/* Reset default margins and padding */
+
+
+.about {
+    padding-top: 3967px;
+    text-align: center;
+    background-color: #e3f9fb;
+}
+
+
+.camp h1 {
+    background-color: rgba(121, 242, 7, 0.214);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: 50;
+    color: black;
+    margin-bottom: 50px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid rgba(89, 10, 10, 0.303);
+}
+
+
+.camp1 p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 10px;
+    white-space: normal;
+    line-height: 1.4;
+    padding-bottom: 0px;
+}
+.camp1 button{
+
+        padding: 10px 20px;
+        background-color: #1a1c1ae4;
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        border: none;
+        text-align: left;
+        display: inline-block;
+        margin-left: 0;
+    
+}
+.camp1 button:hover {
+    background-color: rgba(185, 59, 37, 0.716);
+    color: black;
+}
+
+.h1 h1 {
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    color: black;
+    margin-top: 300px;
+    margin-left: 0px;
+    padding:20px 0px 20px 170px;
+    background-color: rgba(255, 255, 0, 0.407);
+    border-radius: 500px;
+}
+
+.about-image {
+    background-color: rgb(205, 150, 205, 0.5);
+    border-radius: 50px;
+}
+
+.about-image img {
+    border-radius: 50px;
+    min-width: 100%;
+    height: 800px;
+}
+
+.about-image h2 {
+    font-size: 5.5em;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(49, 5, 5);
+    padding: 100px 0 180px;
+}
+
+.about-image2 {
+    background-color: rgba(13, 143, 112, 0.504);
+    border-radius: 30px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 63px;
+    border-top-right-radius:63px;
+    padding-bottom: 300px;
+}
+
+.about-image2 h4 {
+    padding-top: 10px;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(49, 5, 5);
+    padding-bottom: 10px;
+    border: 2px solid black;
+    margin-bottom: 0px;
+    background-color: #e5950b59;
+    cursor: pointer;
+    border-top-left-radius: 63px;
+    border-top-right-radius:63px;
+}
+.about-image2 p {
+    font-size: 1.2em;
+    text-align: center;
+    color: rgba(11, 4, 4, 0.915);
+}
+
+/* Image styling for about section */
+.about-image2 img {
+    padding: 10px;
+    width: 30%;
+    height: 450px;
+    border-radius: 6%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/* Container for images */
+.campaign-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Each image container */
+.image-container {
+    flex: 1;
+    max-width: 30%;
+    position: relative;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6%;
+    object-fit: cover;
+}
+
+/* Optional: Caption styling */
+figure {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 0;
+}
+
+figcaption {
+    position: absolute;
+    top: -13.5px;
+    left: 20px;
+    right: 0px;
+    color: rgb(5, 4, 4);
+    padding: 10px;
+    border-radius: 5px;
+}
+.image-container button{
+
+    padding: 10px 20px;
+    background-color: #1a1c1ae4;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    text-align: left;
+    display: inline-block;
+    margin-left: 0;
+
+}
+.image-container button:hover {
+background-color: rgba(185, 59, 37, 0.716);
+color: black;
+}
+
+.about-about {
+    background-color: rgb(184, 219, 184, 0.1);
+    padding-top: 0px;
+    padding-bottom: 10px;
+ 
+}
+
+.about-about h2 { 
+    font-size: 8em;
+    text-align: left;
+    line-height: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-content {
+    display: flex;
+    gap: 20px;
+}
+
+.about-content1 {
+    flex: 1;
+    text-align: left;
+}
+
+.about-content1 h5 {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.about-content1 button {
+    padding: 10px 20px;
+    background-color: #1a1c1a;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    text-align: left;
+    display: inline-block;
+    margin-left: 0;
+}
+
+.about-content1 button:hover {
+    background-color: rgba(235, 13, 13, 0.8);
+    color: black;
+}
+
+.donate-image {
+    flex: 1.5;
+}
+
+.donate-image img {
+    border-radius: 30px;
+    min-width: 100%;
+}
+
+
+.Footer {
+    z-index: 0;
+    position: relative;
+}
+
+/* Responsive styles */
+@media (max-width: 990px) {
+    .about {
+        padding-top: 2800px;
+        background-color: #f0efef;
+    }
+
+    .h1 h1 {
+        font-size: 60px;
+        margin-top: 100px;
+    }
+
+    .about-image h2 {
+        font-size: 50px;
+        margin-top: -50px;
+        margin-bottom: -80px;
+    }
+
+    .about-about h2 {
+        font-size: 50px;
+        text-align: left;
+        margin-left: 80px;
+    }
+
+    .about-content1 h5 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 990px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content .about-content1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .about-content img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 759px) {
+    .about-image2 img {
+        width: 90%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 389px) {
+    .h1 h1 {
+        font-size: 20px;
+        margin-top: 100px;
+    }
+
+    .about-image h2 {
+        font-size: 20px;
+        margin-top: -50px;
+        margin-bottom: -80px;
+    }
+
+    .about-about h2 {
+        font-size: 20px;
+        text-align: left;
+        margin-left: 80px;
+    }
+
+    .about-content1 h5 {
+        font-size: 0.5em;
+    }
+}

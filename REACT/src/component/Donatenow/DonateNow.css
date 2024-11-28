@@ -1,0 +1,237 @@
+.donate {
+    padding-top: 1488px;
+    text-align: center;
+    background-color: #a643bc2c;
+}
+
+.Dcamp h1 {
+    background-color: rgba(219, 232, 79, 0.501);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: 50;
+    color: black;
+    margin-bottom: 50px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid rgba(89, 10, 10, 0.303);
+}
+
+.Dcamp1 p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 10px;
+    white-space: normal;
+    line-height: 1.4;
+    padding-bottom: 0px;
+}
+
+.Dcamp1 button {
+    padding: 10px 20px;
+    background-color: #1a1c1ae4;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    text-align: left;
+    display: inline-block;
+    margin-left: 0;
+}
+
+.register {
+  margin-top:250px;
+  text-align: center;
+  padding-left: 50px;
+
+  }
+.register p{
+    font-size: 20px;
+    font-weight:bold;
+    color: rgb(44, 8, 8);
+    margin-left: -25px;
+}
+.register button {
+    padding: 10px 20px;
+    background-color: #3c00effc;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    display: inline-block; 
+    text-align: center;
+    margin-left: -40px;
+    width: 100px;
+}
+
+  .register button:hover {
+    background-color: #ff3b00;
+  }
+  
+
+.donate-image2 {
+    margin-top: 50px;
+    background-color: rgba(35, 20, 7, 0.37);
+    border-radius: 30px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 66px;
+    border-top-right-radius:66px;
+
+    padding-bottom: 50px;
+}
+
+.donate-image2 h4 {
+    padding-top: 10px;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(206, 4, 4);
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    background-color: #91e6f2ea;
+    cursor: pointer;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border: 2px solid black;
+}
+
+.donate-image2 p {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.915);
+}
+
+.donate-image2 .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 100px;
+    margin-top: 60px;
+    padding: 0 100px;
+    cursor: pointer;
+}
+
+/* .Dimage-container {
+    flex: 1 1 48%; 
+    max-width: 48%;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.Dimage-container img {
+    width: 92%; 
+    height: 99%;
+    object-fit: cover;
+    border-radius: 6%;
+    transition: transform 0.3s ease;
+}
+
+/* .Dimage-container img:hover {
+    transform: scale(1.05);
+} */
+
+
+.Dimage-container1 {
+    flex: 1 1 48%; 
+    max-width: 48%;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Dimage-container1 img {
+    width: 100%; 
+    height: 99%;
+    object-fit: cover;
+    border-radius: 6%;
+    transition: transform 0.3s ease;
+}
+
+/* .Dimage-container1 img:hover {
+    transform: scale(1.05);
+} */
+
+
+.Dimage-container2 {
+    flex: 1 1 48%; 
+    max-width: 48%;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Dimage-container2 img {
+    width: 100%; 
+    margin-top: 20px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6%;
+    transition: transform 0.3s ease;
+}
+.Dimage-container3 {
+    flex: 1 1 48%; 
+    max-width: 48%;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Dimage-container3 img {
+    width: 100%; 
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 40px;
+    object-fit: cover;
+    border-radius: 6%;
+    transition: transform 0.3s ease;
+}
+
+/* .Dimage-container2 img:hover {
+    transform: scale(1.05);
+} */
+
+/* Footer Styling */
+.Footer {
+    z-index: 0;
+    position: relative;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 990px) {
+    .donate {
+        padding-top: 500px;
+        background-color: #f0efef;
+    }
+}
+
+@media (max-width: 990px) {
+    .donate-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donate-content .donate-content1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .donate-content img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 759px) {
+    .donate-image2 img {
+        width: 90%;
+        height: 80%;
+    }
+}

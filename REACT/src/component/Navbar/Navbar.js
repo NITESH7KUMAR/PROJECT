@@ -1,10 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import axios from 'axios';
+import Accounts from '../Accounts/Accounts.js';
 
 const Navbar = ({ isLoggedIn, onLoginStateChange }) => {
+    const [username, setUsername] = useState('');
+
+    useEffect(() => {
+        if (isLoggedIn) {
+            setUsername(localStorage.getItem('username'));
+        } else {
+            setUsername('');
+        }
+    }, [isLoggedIn]);
+
     const handleLogout = () => {
-        onLoginStateChange(false); // Change the login state to false
+        axios
+            .post('https://eb29-125-16-189-244.ngrok-free.app/PROJECT/PHP/Logout.php')
+            .then((response) => {
+                if (response.data.success) {
+                    // Update login state to false
+                    onLoginStateChange(false); // This triggers a re-render in the parent
+                    localStorage.removeItem('username');
+                    alert("Logged out successfully");
+                } else {
+                    alert("Logout failed, please try again.");
+                }
+            })
+            .catch((error) => {
+                console.error("Error logging out:", error);
+                alert("An error occurred during logout. Please try again.");
+            });
     };
 
     return (
@@ -19,21 +46,24 @@ const Navbar = ({ isLoggedIn, onLoginStateChange }) => {
                         <Link to="/about">About</Link>
                     </li>
                     <li className="nav-links1">
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/Donatenow">DonateNow</Link>
                     </li>
                     <li className="nav-links1">
-                        <Link to="/d-blood">D-Blood</Link>
-                    </li>
-                    <li className="nav-links1">
-                        <Link to="/accounts">Accounts</Link>
+                        <Accounts isLoggedIn={isLoggedIn} />
                     </li>
                 </ul>
 
-                <div className="login">
-                    {isLoggedIn ? (
-                        <button onClick={handleLogout}>Logout</button>
+                <div className="user-info">
+                    {username ? (
+                        <div className="user-info-logged">
+                            <p>Welcome, {username}</p>
+                            <button onClick={handleLogout}>Logout</button>
+                        </div>
                     ) : (
-                        <Link to="/login">Login</Link>
+                        <div className="user-info-logged-out">
+                            <p>Please Login</p>
+                            <Link to="/login">Login</Link>
+                        </div>
                     )}
                 </div>
 

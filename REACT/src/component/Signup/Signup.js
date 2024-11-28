@@ -23,7 +23,7 @@ function Signup() {
         }
 
         axios
-            .post('http://localhost/PROJECT/PHP/Signup.php', {
+            .post('https://eb29-125-16-189-244.ngrok-free.app/PROJECT/PHP/Signup.php', {
                 username,
                 email,
                 password,
@@ -32,7 +32,7 @@ function Signup() {
                 console.log(response.data);  // Check the response data
                 if (response.data.message) {
                     alert(response.data.message);  // Show the success message
-                    navigate('/login'); // Redirect to login page after successful signup
+                    navigate('/login'); 
                 } else {
                     alert('Unexpected response from server');
                 }
@@ -44,6 +44,7 @@ function Signup() {
     };
 
     return (
+        <div className='Sign-page'>
         <div className="Signin-container">
             <h2>Sign Up</h2>
             <form onSubmit={handleSignup}>
@@ -89,6 +90,7 @@ function Signup() {
                     <button>Already have an account? Login</button>
                 </Link>
             </div>
+        </div>
         </div>
     );
 }

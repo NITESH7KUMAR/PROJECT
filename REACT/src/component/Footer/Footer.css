@@ -1,0 +1,79 @@
+/* General footer styling */
+.footer {
+    background: rgb(236, 234, 234);
+    color: #333;
+    text-align: center;
+    margin-top: 53px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-top: 2px solid rgb(6, 5, 5);
+}
+
+/* Back to Top Panel */
+.foot-panel1 {
+    background-color: #882321;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+
+}
+.foot-panel1 p{
+    cursor: pointer;
+}
+.foot-panel1 p:hover{
+    color: #f5f1ee;
+}
+
+/* Main Footer Panel */
+.foot-panel2 {
+    background-color: #383031;
+    color: white;
+    height: 250px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* List styling within the Footer */
+.foot-panel2 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.foot-panel2 ul p {
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.foot-panel2 ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+    text-decoration: none;
+}
+
+.foot-panel2 ul a:hover {
+    color: #ecafaf;
+}
+.foot-panel2 ul p:hover {
+    color: #e61111;
+}
+.foot-panel1 p:hover {
+    color: #f3ef09;
+}
+
+.contect{
+    text-align: left;
+}
+
+icon:hover{
+    color: #298981;
+}

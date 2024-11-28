@@ -8,6 +8,19 @@ body {
     font-family: Arial, sans-serif;
     flex-direction: column; 
 }
+.Sign-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100vw; 
+    background-image: url('../assets/Login-img.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0; 
+    font-family: Arial, sans-serif;
+}
 
 .header {
     position: fixed;
@@ -78,7 +91,7 @@ body {
 }
 
 .Signin-container button:hover {
-    background-color: #9fa614; /* Darker green on hover */
+    background-color: #95aa2e; /* Darker green on hover */
 }
 
 .login-link {
@@ -88,7 +101,7 @@ body {
 .login-link button {
     width: 100%;
     padding: 10px;
-    background-color: #13e273; /* Green button color */
+    background-color: #f05e1f; /* Green button color */
     color: white;
     border: none;
     border-radius: 5px;
