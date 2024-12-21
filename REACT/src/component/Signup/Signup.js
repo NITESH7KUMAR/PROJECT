@@ -23,7 +23,7 @@ function Signup() {
         }
 
         axios
-            .post('https://eb29-125-16-189-244.ngrok-free.app/PROJECT/PHP/Signup.php', {
+            .post('http://localhost/Project/PHP/Signup.php', {
                 username,
                 email,
                 password,

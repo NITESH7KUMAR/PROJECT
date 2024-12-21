@@ -17,7 +17,7 @@ const Navbar = ({ isLoggedIn, onLoginStateChange }) => {
 
     const handleLogout = () => {
         axios
-            .post('https://eb29-125-16-189-244.ngrok-free.app/PROJECT/PHP/Logout.php')
+            .post('http://localhost/Project/PHP/Logout.php')
             .then((response) => {
                 if (response.data.success) {
                     // Update login state to false

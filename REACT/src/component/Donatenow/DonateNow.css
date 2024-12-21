@@ -1,5 +1,5 @@
 .donate {
-    padding-top: 1488px;
+    padding-top: 1475px;
     text-align: center;
     background-color: #a643bc2c;
 }
@@ -141,8 +141,7 @@
 } */
 
 
-.Dimage-container1 {
-    flex: 1 1 48%; 
+.Dimage-container1 { 
     max-width: 48%;
     position: relative;
     padding: 0;
@@ -163,14 +162,11 @@
 
 
 .Dimage-container2 {
-    flex: 1 1 48%; 
-    max-width: 48%;
     position: relative;
     padding: 0;
     box-sizing: border-box;
 }
 .Dimage-container2 img {
-    width: 100%; 
     margin-top: 20px;
     height: 100%;
     object-fit: cover;
@@ -178,14 +174,11 @@
     transition: transform 0.3s ease;
 }
 .Dimage-container3 {
-    flex: 1 1 48%; 
-    max-width: 48%;
     position: relative;
     padding: 0;
     box-sizing: border-box;
 }
 .Dimage-container3 img {
-    width: 100%; 
     height: 100%;
     margin-top: 20px;
     margin-left: 40px;
@@ -229,9 +222,4 @@
     }
 }
 
-@media (max-width: 759px) {
-    .donate-image2 img {
-        width: 90%;
-        height: 80%;
-    }
-}
+

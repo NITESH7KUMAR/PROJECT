@@ -289,10 +289,10 @@ color: black;
         margin-top: 20px;
     }
 
-    .about-content img {
+    /* .about-content img {
         width: 90%;
         margin-bottom: 20px;
-    }
+    } */
 }
 
 @media (max-width: 759px) {

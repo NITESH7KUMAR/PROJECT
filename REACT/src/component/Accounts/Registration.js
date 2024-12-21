@@ -21,7 +21,7 @@ function Registration() {
     } else {
       setError(""); // Clear any previous error
       axios
-        .post("https://eb29-125-16-189-244.ngrok-free.app/PROJECT/PHP/Registration.php", {
+        .post("http://localhost/Project/PHP/Registration.php", {
           name,
           phone,
           email,

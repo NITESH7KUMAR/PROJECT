@@ -311,8 +311,7 @@ h4 {
 @media (max-width: 376px) {
 
     .home{
-        padding-top: 5800px;
-        margin-left: 400px;   
+        padding-top: 5800px;  
     }
     .heading h1 {
         font-size: 40px;

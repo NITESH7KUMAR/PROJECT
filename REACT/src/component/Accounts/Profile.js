@@ -15,7 +15,7 @@ function ProfilePage() {
       alert("Please fill in all the details.");
     } else {
       axios
-        .post("https://eb29-125-16-189-244.ngrok-free.app/PROJECT/PHP/Profile.php", {
+        .post("http://localhost/Project/PHP/Profile.php", {
           name,
           phone,
           email,
