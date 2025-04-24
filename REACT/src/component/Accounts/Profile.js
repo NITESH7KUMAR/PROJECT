@@ -15,7 +15,7 @@ function ProfilePage() {
       alert("Please fill in all the details.");
     } else {
       axios
-        .post("http://localhost/Project/PHP/Profile.php", {
+        .post("http://localhost:8000/Profile.php", {
           name,
           phone,
           email,

@@ -20,7 +20,7 @@ function BloodRecipient() {
     if (!name || !phone || !email || !bloodGroup || !dob || !gender || !address || !reason || !EmContact) {
       alert("Please fill in all the details.");
     } else {
-      axios.post("http://localhost/Project/PHP/Recipient.php", {
+      axios.post("http://localhost:8000/Recipient.php", {
         name,
         phone,
         email,

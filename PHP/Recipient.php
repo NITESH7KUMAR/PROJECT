@@ -23,7 +23,7 @@ $EmContact = $input['EmContact'];
 $urgency = $input['urgency'];
 
 
-$conn = new mysqli("localhost", "root", "", "Project");
+$conn = new mysqli("mysql", "root", "rootpassword", "PROJECT");
 
 if ($conn->connect_error) {
     echo json_encode(["success" => false, "message" => "Connection failed: " . $conn->connect_error]);

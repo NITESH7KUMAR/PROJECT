@@ -11,8 +11,7 @@ function Login({ onLogin }) {
     const handleLogin = (e) => {
         e.preventDefault();
 
-        axios
-            .post('http://localhost/Project/PHP/Login.php', {
+        axios.post('http://localhost:8000/Login.php', {
                 identifier: identifier,
                 password: password
             })

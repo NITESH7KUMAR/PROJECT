@@ -22,8 +22,7 @@ function Signup() {
             return;
         }
 
-        axios
-            .post('http://localhost/Project/PHP/Signup.php', {
+        axios.post('http://localhost:8000/Signup.php', {
                 username,
                 email,
                 password,
