@@ -3,7 +3,6 @@ pipeline {
 
   environment {
     IMAGE_NAME = 'kumar7nitesh/project-php'
-    DOCKER_COMPOSE_DIR = 'php'  // Change this if your docker-compose.yml is elsewhere
   }
 
   stages {
@@ -15,10 +14,8 @@ pipeline {
 
     stage('Build Docker Image') {
       steps {
-        dir('php') {
-          script {
-            bat "docker build -t ${IMAGE_NAME} ."
-          }
+        script {
+          sh "docker build -t ${IMAGE_NAME} ."
         }
       }
     }
@@ -27,8 +24,8 @@ pipeline {
       steps {
         withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
           script {
-            bat "echo %DOCKER_PASS% | docker login -u %DOCKER_USER% --password-stdin"
-            bat "docker push ${IMAGE_NAME}"
+            sh "echo \"$DOCKER_PASS\" | docker login -u \"$DOCKER_USER\" --password-stdin"
+            sh "docker push ${IMAGE_NAME}"
           }
         }
       }
@@ -36,11 +33,9 @@ pipeline {
 
     stage('Deploy using Docker Compose') {
       steps {
-        dir("${DOCKER_COMPOSE_DIR}") {
-          script {
-            bat 'docker-compose down || true'
-            bat 'docker-compose up -d'
-          }
+        script {
+          sh 'docker-compose down || true'
+          sh 'docker-compose up -d'
         }
       }
     }
