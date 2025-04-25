@@ -9,7 +9,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit();
 }
 
-$conn = new mysqli("localhost", "root", "", "Project");
+$conn = new mysqli("mysql", "root", "rootpassword", "PROJECT");
+
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
