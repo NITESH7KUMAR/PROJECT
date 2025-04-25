@@ -2,13 +2,13 @@ pipeline {
   agent any
 
   environment {
-    IMAGE_NAME = 'kumar7nitesh/blood-donation-backend'
+    IMAGE_NAME = 'kumar7nitesh/project-php'
   }
 
   stages {
     stage('Clone Repo') {
       steps {
-        git 'https://github.com/NITESH7KUMAR/PROJECT.git'
+        git branch: 'main', url: 'https://github.com/NITESH7KUMAR/PROJECT.git'
       }
     }
 
