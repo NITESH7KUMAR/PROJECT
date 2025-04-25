@@ -21,7 +21,7 @@ function Registration() {
     } else {
       setError(""); // Clear any previous error
       axios
-        .post("http://localhost/Project/PHP/Registration.php", {
+        .post("http://localhost:8000/Registration.php", {
           name,
           phone,
           email,
